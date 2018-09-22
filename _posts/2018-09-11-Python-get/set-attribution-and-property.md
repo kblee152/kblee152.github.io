@@ -11,6 +11,7 @@ comments: true
 - getter, setter 메서드 대신 `property`를 사용
 
 > 홑밑줄(single underscore): 내부적으로 사용하는 변수일 때 사용
+
 > 곁밑줄(double underscore): 클래스 외부에서 접근할 수 없도록 내부 변수로 만듬
 
 ```python
@@ -36,9 +37,9 @@ class Duck():
     def name(self, input_name):
         print('inside the setter')
         self.hidden_name = input_name
-        
+ ```       
 
-```python3
+```python
 class C(object):
     def __init__(self, v):
         self.value = v
@@ -53,9 +54,10 @@ c1 = C(10)
 print(c1.getValue())
 c1.setValue(20)
 print(c1.getValue())
+```
 
 
-```python3
+```python
 class Cal(object):
     def __init__(self, v1, v2):
         self.v1 = v1
@@ -64,19 +66,24 @@ class Cal(object):
         return self.v1 + self.v2
     def subtract(self):
         return self.v1 - self.v2
+```
 
+```python
 c1 = Cal(10,10)
 print(c1.add())
 print(c1.subtract())
+```
 
 > 직접 변경 시도 시 오류 발생 가능, 문자열과 숫자의 연산 시도
+
+```python
 c1.v1 = 'one'
 c1.v2 = 30
 print(c1.add())
 print(c1.subtract())
+```
 
-
-```python3
+```python
 class Cal(object):
     def __init___(self, v1, v2):
         isinstance(v1, int):
@@ -92,6 +99,7 @@ class Cal(object):
             self.v1 = v
     def getV1(self):
         return self.v1
-        
+
 c1.setV1('one')
 c1.v2 = 30
+```
