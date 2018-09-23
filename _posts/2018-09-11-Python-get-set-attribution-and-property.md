@@ -66,9 +66,7 @@ class Cal(object):
         return self.v1 + self.v2
     def subtract(self):
         return self.v1 - self.v2
-```
 
-```python
 c1 = Cal(10,10)
 print(c1.add())
 print(c1.subtract())
