@@ -9,4 +9,4 @@ comments: true
 ![proportion of customers](../images/2019-03-10-1.png)
 
 ## Peaks
-![Peak](../images/2019-03-10-2.png)
+![Peak](../images/2019-03-10-3.png)
