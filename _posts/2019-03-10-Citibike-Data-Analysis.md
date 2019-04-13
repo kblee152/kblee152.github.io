@@ -6,7 +6,7 @@ comments: true
 ---
 
 ## Proportion of short-term customers and annual subscribers changed
-![proportion of customers](../images/2019-03-10-1.png)
+![proportion of customers](../images/2019-03-10-proportion-of-user.png)
 
 ## Peaks
-![Peak](../images/2019-03-10-3.png)
+![Peak](../images/2019-03-10-peaks.png)
