@@ -14,4 +14,4 @@ comments: true
 ![PickupTime2](../images/2019-04-16-pickup-time-2.png)
 
 ## Peaks Weekdays Or weekends
-![PickupTime3](../images/2019-04-16-Weekday-or-Weekends.png)
+![PickupTime3](../images/2019-04-16-3-Weekday-or-Weekends.png)
