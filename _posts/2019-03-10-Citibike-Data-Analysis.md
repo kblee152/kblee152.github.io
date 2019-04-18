@@ -11,6 +11,3 @@ comments: true
 ## Peaks
 ![Peak](../images/2019-03-10-peaks.png)
 
-## Pickup Time
-![PickupTime1](../images/2019-04-16-pickup-time-1.png)
-![PickupTime2](../images/2019-04-16-pickup-time-2.png)
