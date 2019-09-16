@@ -11,6 +11,7 @@ comments: true
 
 ```python
 import pandas as pd
+
 pd_odd = pd.Series(odd)
 print(pd_odd)
 ```
