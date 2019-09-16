@@ -15,7 +15,7 @@ import pandas as pd
 pd_odd = pd.Series(odd)
 print(pd_odd)
 ```
-pandas Series는 python의 list와 유사한 기능
+pandas Series는 python의 list와 유사한 기능  
 pandas Series로 사용해야 pandas의 기능을 사용할 수 있음
 
 ```python
