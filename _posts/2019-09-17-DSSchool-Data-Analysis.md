@@ -35,6 +35,19 @@ print(numbers)
 ```
 
 
+### Nan(Not a Number)
+```python
+import numpy as np
 
+odd = [1, 3, 5, 7, 9]
+odd = pd.Series(odd)
+odd.dtypes
 
+# dtype('int64')
+
+odd = [1, 3, 5, 7, 9, np.nan]
+odd.dtypes
+
+# dtype('float64')
+```
 
