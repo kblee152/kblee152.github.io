@@ -1,12 +1,10 @@
 ---
 layout: post
-title: "(1)DSSchool Data Analysis"
+title: "DS-School Level 1-1 Pandas Series, DataFrame, Non"
 tags: [SQL, DSSchool]
 comments: true
 ---
 
-
-## Level 1
 ### pandas Series and DataFrame
 
 ```python

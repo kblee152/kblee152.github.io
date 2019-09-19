@@ -5,7 +5,7 @@ tags: [SQL, DSSchool]
 comments: true
 ---
 
-## DataFrame 생성 - 1
+### DataFrame 생성 - 1
 
 ```python
 import pandas as pd
@@ -28,7 +28,7 @@ order = pd.DataFrame(order, columns = columns)
 order
 ```
 
-## DataFrame 생성 - 2
+### DataFrame 생성 - 2
 
 ```python
 import pandas as pd
@@ -43,7 +43,7 @@ order = pd.DataFrame(order)
 order
 ```
 
-## DataFrame 생성 - 3
+### DataFrame 생성 - 3
 
 ```python
 
