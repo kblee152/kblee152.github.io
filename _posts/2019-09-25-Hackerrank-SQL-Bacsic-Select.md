@@ -14,8 +14,18 @@ Input Format
 
 The STATION table is described as follows:
 
+
+| Field | Type |
+|:-----|:----:|
+| ID  | NUMBER  |
+| CITY  | VARCHAR2(21)  |
+| STATE  | VARCHAR2(2)  |
+| LAT_N  | NUMBER  |
+| LONG_W  | NUMBER  |
+|----
+
 ```SQL
-SELECT CITy, LENGH(CITY)
+SELECT CITY, LENGTH(CITY)
 FROM (SELECT CITY
     FROM STATION
     ORDER BY LENGTH(CITY), CITY)
@@ -25,5 +35,5 @@ SELECT CITY, LENGTH(CITY)
 FROM(SELECT CITY
     FROM STATION
     ORDER BY LENGTH(CITY) DESC, CITY)
-WHERE ROWNUM = 1'
+WHERE ROWNUM = 1;
 ```
