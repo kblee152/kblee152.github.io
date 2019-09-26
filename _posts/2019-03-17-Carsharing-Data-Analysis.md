@@ -6,8 +6,9 @@ comments: true
 ---
 
 dump table
+
 | 필드 이름 | 유형 |
-|:-----|:----:|
+|:---|:---|
 | id  | INTEGER  |
 | created  | TIMESTAMP  |
 | updated  | TIMESTAMP  |
