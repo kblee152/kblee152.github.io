@@ -5,8 +5,27 @@ tags: [tableau, carsharing]
 comments: true
 ---
 
-## Proportion of customers
+dump table
+| 필드 이름 | 유형 |
+|:-----|:----:|
+| id  | INTEGER  |
+| created  | TIMESTAMP  |
+| updated  | TIMESTAMP  |
+| deleted  | TIMESTAMP  |
+| status  | INTEGER  |
+| pickup_time  | TIMESTAMP  |
+| return_time  | TIMESTAMP  |
+| options  | INTEGER  |
+| purpose  | STRING  |
+| car_id  | INTEGER  |
+| exemption_id  | STRING  |
+| paycard_id  | STRING  |
+| pickup_spot_id  | INTEGER  |
+| return_spot_id  | INTEGER  |
+| user_id  | INTEGER  |
+|----
 
+## Proportion of customers
 ![정회원/준회원 비율](../images/2019-03-17-carsharing-data-analysis-회원변동.png)
 
 ## Peaks
