@@ -27,18 +27,19 @@ dump table
 |----
 
 1. MAU(Monthly Active User)
+
 ```SQL
 SELECT COUNT(DISTINCT user_id)
 FROM `carsharing_data.dump`
 WHERE pickup_time >= '2019-02-01' and pickup_time <= '2019-02-28'
 ```
-
 2. DAU(Daily Active User)
 3. 일자별 Trip의 수
 4. 스팟별 Trip의 수
 5. 시작 Station, 도착 Station 별 개수
 6. Trip을 시작하는 특정 날짜 및 시간에 대한 Count
 7. 2019년 1월 1일부터 시간대별 추세
+
 ```SQL
 SELECT start_hour, count(id) AS count
 FROM (
@@ -49,6 +50,7 @@ FROM (
 GROUP BY start_hour
 ORDER BY count DESC
 ```
+
 8. 요일별 사용자 수 Count
 
 
