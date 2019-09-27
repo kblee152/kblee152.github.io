@@ -46,7 +46,6 @@ order
 ### DataFrame 생성 - 3
 
 ```python
-
 import pandas as pd
 
 order = [

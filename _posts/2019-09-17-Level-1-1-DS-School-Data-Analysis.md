@@ -34,6 +34,7 @@ print(numbers)
 
 
 ### Nan(Not a Number)
+
 ```python
 import numpy as np
 

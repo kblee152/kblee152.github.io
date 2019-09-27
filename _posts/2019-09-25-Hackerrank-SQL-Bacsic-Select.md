@@ -12,7 +12,6 @@ Input Format
 
 The STATION table is described as follows:
 
-
 | Field | Type |
 |:-----|:----:|
 | ID  | NUMBER  |
@@ -22,13 +21,15 @@ The STATION table is described as follows:
 | LONG_W  | NUMBER  |
 |----
 
-```SQL
+```sql
 SELECT CITY, LENGTH(CITY)
 FROM (SELECT CITY
     FROM STATION
     ORDER BY LENGTH(CITY), CITY)
 WHERE ROWNUM = 1;
+```
 
+```sql
 SELECT CITY, LENGTH(CITY)
 FROM(SELECT CITY
     FROM STATION
