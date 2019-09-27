@@ -1,11 +1,9 @@
 ---
 layout: post
-title: "SQL-Basic Select-Weather Observation Station 5"
+title: "Hackerrank-SQL-Basic Select-Weather Observation Station 5"
 tags: [Hackerrank, SQL]
 comments: true
 ---
-
-### SQL-Basic-Select-Weather Observation Station 5
 
 #### Problem
 Query the two cities in STATION with the shortest and longest CITY names, as well as their respective lengths (i.e.: number of characters in the name). If there is more than one smallest or largest city, choose the one that comes first when ordered alphabetically.

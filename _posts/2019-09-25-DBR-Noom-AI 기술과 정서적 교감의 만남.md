@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "AI 기술과 정서적 교감 만나 감동이 되다"
-tags: [책, 독서]
+title: "DBR-AI 기술과 정서적 교감 만나 감동이 되다"
+tags: [DBR]
 comments: true
 ---
 

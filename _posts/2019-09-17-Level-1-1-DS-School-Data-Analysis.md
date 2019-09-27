@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "DS-School Level 1-1 Pandas Series, DataFrame, Non"
-tags: [SQL, DSSchool]
+tags: [DSSchool]
 comments: true
 ---
 
