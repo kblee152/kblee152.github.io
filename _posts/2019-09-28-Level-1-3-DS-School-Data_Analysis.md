@@ -13,7 +13,8 @@ import pandas as pd
 order_url = 'https://sampleUrl.com'
 pd.read_csv(order_url)
 ```
-| ( ) | id | user_id | product_id | date | price | address | state |
+
+| | id | user_id | product_id | date | price | address | state |
 |:-----|:----:|:----:|:----:|:----:|:----:|:----:|:----:|
 | 0  | 1  | 3  | 9  | 2017-01-01  | 500  | Seoul  | confirmed  |
 | 1  | 2  | 1  | 7  | 2017-01-03  | 700  | Seoul  | canceled  |
