@@ -11,7 +11,7 @@ Table: dump table
 |:---|:---|
 | id  | INTEGER  |
 | created  | TIMESTAMP  |
-| updated  | TIMESTAMP  등
+| updated  | TIMESTAMP  |
 | deleted  | TIMESTAMP  |
 | status  | INTEGER  |
 | pickup_time  | TIMESTAMP  |
@@ -48,8 +48,6 @@ FROM carsharing_data.dump
 GROUP BY prickup_spot_id
 ORDER BY count DESC;
 ```
-
-
 
 ### Tableau Visualization
 
