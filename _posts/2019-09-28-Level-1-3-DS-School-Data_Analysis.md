@@ -59,4 +59,3 @@ order.tail()
 # 특정 개수의 하위 데이터 출력
 order.tail(3)
 ```
-
