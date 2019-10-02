@@ -1,17 +1,17 @@
 ---
 layout: post
-title: "Carsharing 데이터 분석"
+title: "Carsharing 데이터 분석 2: Trip의 수, 추세 등"
 tags: [tableau, carsharing]
 comments: true
 ---
 
-dump table
+Table: dump table
 
 | 필드 이름 | 유형 |
 |:---|:---|
 | id  | INTEGER  |
 | created  | TIMESTAMP  |
-| updated  | TIMESTAMP  |
+| updated  | TIMESTAMP  등
 | deleted  | TIMESTAMP  |
 | status  | INTEGER  |
 | pickup_time  | TIMESTAMP  |
@@ -26,31 +26,29 @@ dump table
 | user_id  | INTEGER  |
 |----
 
-1. MAU(Monthly Active User)
+1. 일자별 Trip의 수
+2. 스팟별 Trip의 수
+3. 시작 Station, 도착 Station 별 개수
+4. Trip을 시작하는 특정 날짜 및 시간에 대한 Count
+5. 2019년 1월 1일부터 시간대별 추세
+6. 요일별 사용자 수 Count
 
+#### 1. 일자별 Trip의 수
 ```sql
-SELECT COUNT(DISTINCT user_id)
-FROM `carsharing_data.dump`
-WHERE pickup_time >= '2019-02-01' and pickup_time <= '2019-02-28'
+SELECT DATE(pickup_time), COUNT(id) as count
+FROM carsharing_data.dump
+GROUP BY date
+ORDER BY date;
 ```
-2. DAU(Daily Active User)
-3. 일자별 Trip의 수
-4. 스팟별 Trip의 수
-5. 시작 Station, 도착 Station 별 개수
-6. Trip을 시작하는 특정 날짜 및 시간에 대한 Count
-7. 2019년 1월 1일부터 시간대별 추세
 
+#### 2. 스팟별 Trip의 수
 ```sql
-SELECT start_hour, count(id) AS count
-FROM (
-	SELECT DATETIME_TRUNC(DATETIME(pickup_time), hour) AS start_hour, *
-	FROM `carsharing_data.dump`
-	where date(pickup_time) >= '2019-01-01'
-)
-GROUP BY start_hour
-ORDER BY count DESC
+SELECT pickup_spot_id, COUNT(id) as count
+FROM carsharing_data.dump
+GROUP BY prickup_spot_id
+ORDER BY count DESC;
 ```
-8. 요일별 사용자 수 Count
+
 
 
 ### Tableau Visualization
