@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "카셰어링 앱 예약 개선"
-tags: [ui, ux, sketch]
+tags: [UI/UX]
 comments: true
 ---
 > Choose your ride. The ride selection experience went through the most design cycles and iteractions. List views, tablular representations, paginations... we tried it all to see what worked best. Ongoing user research, interviews and iteractive prototyping using Framer and Swift played a crucial role in our process.
