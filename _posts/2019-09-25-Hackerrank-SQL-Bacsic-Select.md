@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Hackerrank-SQL-Weather Observation Station 5"
-tags: [Hackerrank, SQL]
+tags: [Hackerrank/SQL]
 comments: true
 ---
 
