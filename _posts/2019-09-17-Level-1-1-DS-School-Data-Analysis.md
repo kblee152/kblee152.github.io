@@ -1,11 +1,11 @@
 ---
 layout: post
-title: "DS-School Level 1 Pandas Series, DataFrame, Non"
+title: "DS-School Level 1 Pandas Series, Nan"
 tags: [DSSchool]
 comments: true
 ---
 
-#### pandas Series and DataFrame
+#### pandas Series
 
 ```python
 import pandas as pd
