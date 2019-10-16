@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "DS-School Level 1 Pandas File 읽기"
+title: "DS-School Level 1 Pandas File 읽기 및 기본 연산"
 tags: [DSSchool]
 comments: true
 ---
@@ -58,4 +58,15 @@ order.head(3)
 order.tail()
 # 특정 개수의 하위 데이터 출력
 order.tail(3)
+```
+
+#### Pandas 기본 연산
+```python
+order["price"].mean()
+order["price"].max()
+order["price"].min()
+order["price"].describe()
+order["price"].unique()
+order["price"].value_counts()
+order["price"].value_counts(normalize = True)
 ```
