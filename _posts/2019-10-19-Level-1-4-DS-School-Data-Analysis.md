@@ -56,7 +56,7 @@ order_date
 %timeit order.loc[1, "date"]
 ```
 
-##### Pandas at, loc
+##### Row/Column 검색: at, loc
 - pandas at이 loc보다 속도가 빠름  
 - at은 row, column 모두 하나씩만 접근 가능
 
@@ -109,3 +109,23 @@ order[order["price"] >= 500]
 | 1  | 3       | 9          | 2017-01-01 | 500   | Seoul   | confirmed |
 | 2  | 1       | 7          | 2017-01-03 | 700   | Seoul   | confirmed |
 
+
+##### 다중조건
+
+```python
+(order["price"] >= 500) & (order["state"] == "confirmed")
+```
+
+| id |      |
+|----|------|
+| 1  | True |
+| 2  | True |
+
+
+```python
+order[(order["price"] >= 500 & order["state"] == "confirmed)]
+```
+| id |      |
+|----|------|
+| 1  | True |
+| 2  | True |
