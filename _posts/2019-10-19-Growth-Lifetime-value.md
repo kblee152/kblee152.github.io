@@ -1,3 +1,10 @@
+---
+layout: post
+title: "Growth Lifetime Value"
+tags: [Growth]
+comments: true
+---
+
 #### Lifetime Value
 - Customer Lifetime Value
 - CLTV = CLV = LTV = Lifetime Value

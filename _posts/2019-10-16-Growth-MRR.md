@@ -1,4 +1,13 @@
+---
+layout: post
+title: "Growth MRR"
+tags: [Growth]
+comments: true
+---
+
+
 ##### 좋은 지표 VS 나쁜 지표
+
 
 
 ##### MRR(Monthly Recurring Revenue)
