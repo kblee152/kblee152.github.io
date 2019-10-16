@@ -46,7 +46,7 @@ type(order.loc[[1, 3, 7]])
 order_date = order.loc[1]["date"]
 order_date
 
-%timeit order.loc[1]["date]
+%timeit order.loc[1]["date"]
 ```
 
 ```python
@@ -80,6 +80,7 @@ order["date"] == "2017-01-03"
 ```python
 order[order["date"] == "2017-01-03"]
 ```
+
 |    | user_id | product_id | date       | price | address | state     |
 |----|---------|------------|------------|-------|---------|-----------|
 | id |         |            |            |       |         |           |
@@ -90,6 +91,7 @@ order[order["date"] == "2017-01-03"]
 ```python
 order["price"] >= 500
 ```
+
 | id |      |
 |----|------|
 | 1  | True |
