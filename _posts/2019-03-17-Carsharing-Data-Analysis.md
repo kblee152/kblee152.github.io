@@ -33,17 +33,25 @@ Table: dump table
 ```sql
 SELECT COUNT(DISTINCT user_id)
 FROM `carsharing_data.dump`
-WHERE pickup_time >= '2019-02-01' and pickup_time <= '2019-02-28'
+WHERE pickup_time >= '2019-02-01' and pickup_time <= '2019-02-28';
 ```
 
-### Tableau Visualization
+#### 2. DAU(Daily Active User)
+```sql
+SELECT COUNT(DISTINCT user_id)
+FROM `carsharing_data.dump`
+WHERE pickup_time = '2019-02-01';
+```
 
-#### Proportion of customers
+
+#### Tableau Visualization
+
+##### Proportion of customers
 ![정회원/준회원 비율](../images/2019-03-17-carsharing-data-analysis-회원변동.png)
 
-#### Peaks
+##### Peaks
 ![PickupTime1](../images/2019-04-16-pickup-time-1.png)
 ![PickupTime2](../images/2019-04-16-pickup-time-2.png)
 
-#### Peaks Weekdays Or weekends
+##### Peaks Weekdays Or weekends
 ![PickupTime3](../images/2019-04-16-3-Weekday-or-Weekends.png)

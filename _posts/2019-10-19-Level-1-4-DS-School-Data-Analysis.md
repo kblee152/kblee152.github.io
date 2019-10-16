@@ -125,6 +125,7 @@ order[order["price"] >= 500]
 ```python
 order[(order["price"] >= 500) & (order["state"] == "confirmed")]
 ```
+
 | id |      |
 |----|------|
 | 1  | True |
