@@ -4,7 +4,7 @@ title: "DS-School Level 1 Pandas 검색/색인"
 tags: [DSSchool]
 comments: true
 ---
-##### order table
+##### Table: order
 
 | id | user_id | product_id | date       | price | address | state     |
 |----|---------|------------|------------|-------|---------|-----------|
@@ -123,9 +123,30 @@ order[order["price"] >= 500]
 
 
 ```python
-order[(order["price"] >= 500 & order["state"] == "confirmed)]
+order[(order["price"] >= 500) & (order["state"] == "confirmed")]
 ```
 | id |      |
 |----|------|
 | 1  | True |
 | 2  | True |
+
+
+```python
+high = (order["price"] >= 500)
+confirmed = (order["state"] == "confirmed")
+order[high & confirmed]
+```
+
+| id |      |
+|----|------|
+| 1  | True |
+| 2  | True |
+
+
+```python
+order.loc[order["date"] == "2017-01-09", "price"]
+```
+
+```python
+order.loc[order["date"] == "2017-01-09", ["date", "price"]]
+```
