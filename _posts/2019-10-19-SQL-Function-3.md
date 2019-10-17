@@ -60,6 +60,7 @@ SELECT
 FROM match
 GROUP BY season;
 ```
+
 | season    | pct_homewins | pct_awaywins |
 |-----------|--------------|--------------|
 | 2011/2012 | 0.75         | 0.5          |
