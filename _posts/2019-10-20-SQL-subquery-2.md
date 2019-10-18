@@ -5,6 +5,8 @@ tags: [SQL]
 comments: true
 ---
 
+Datacamp `Intermediate SQL` Chapter_2_Short-and-Simple-Subqueries 요약
+
 subqueries in `WHERE` can only return a single column. if you want to return a more complex set of results, subquery in the `FROM` statement are a robust tool for restructuring and transforming your data.
 
 ##### Subqueries in FROM
