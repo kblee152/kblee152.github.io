@@ -5,10 +5,12 @@ tags: [SQL]
 comments: true
 ---
 
+Datacamp `Intermediate SQL` Chapter_2_Short-and-Simple-Subqueries 요약
+
 Subqueries are incredibly powerful for performing complex filters and transformations. You can filter data based on single, scalar values using a subquery in ways you cannot by using `WHERE` statements or joins. Subqueries can also be used for more advanced manipulation of your data set. You will likely encounter subqueries in any real-world setting that uses relational databases.
 
 ##### What is a subquery?
-- A query nested inside another query
+- A query nested inside anot약er query
 
 ```sql
 SELECT column
