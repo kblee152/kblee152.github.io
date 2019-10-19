@@ -1,6 +1,6 @@
 ---
 layout: post
 title: "Accounting: 운전자본"
-tags: [SQL]
+tags: [Accounting]
 comments: true
 ---
