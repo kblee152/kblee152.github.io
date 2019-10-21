@@ -151,3 +151,5 @@ order.loc[order["date"] == "2017-01-09", "price"]
 ```python
 order.loc[order["date"] == "2017-01-09", ["date", "price"]]
 ```
+
+
