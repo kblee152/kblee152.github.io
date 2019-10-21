@@ -5,7 +5,7 @@ tags: [SQL]
 comments: true
 ---
 
-Datacamp `Intermediate SQL` Chapter_2_Short-and-Simple-Subqueries 
+Datacamp `Intermediate SQL` Chapter_2_Short-and-Simple-Subqueries   
 WHERE are the Subqueries 요약
 
 Subqueries are incredibly powerful for performing complex filters and transformations. You can filter data based on single, scalar values using a subquery in ways you cannot by using `WHERE` statements or joins. Subqueries can also be used for more advanced manipulation of your data set. You will likely encounter subqueries in any real-world setting that uses relational databases.
@@ -113,3 +113,19 @@ WHERE
     FROM match
     WHERE country_id = 15722);
 ```
+
+
+
+
+##### Practice
+
+```sql
+SELECT
+    team_long_name,
+    team_short_name
+FROM team
+WHERE team_api_id NOT IN
+    (SELECT DISTINCT hometeam_id FROM match);
+```
+
+To filtering using a single-value (scalar) subquery, you can create a list of values in a subquery to filter data based on a complex set of conditions. This type of subquery generates a one column reference list for the main query. As long as the values in your list match a column in your main query's table, you don't need to use a join -- even if the list is from a separate table.

@@ -1,13 +1,14 @@
 ---
 layout: post
-title: "SQL Subquerys in FROM"
+title: "SQL Subqueries in FROM"
 tags: [SQL]
 comments: true
 ---
 
-Datacamp `Intermediate SQL` Chapter_2_Short-and-Simple-Subqueries 요약
+Datacamp `Intermediate SQL` Chapter_2_Short-and-Simple-Subqueries  
+Subqueries in FROM 요약
 
-subqueries in `WHERE` can only return a single column. if you want to return a more complex set of results, subquery in the `FROM` statement are a robust tool for restructuring and transforming your data.
+subqueries in `WHERE` can only return a single column. if you want to return a more complex set of results, subquery in the `FROM` statement are a robust tool for restructuring and transforming your data. Subqueries in a `FROM` statement are a common way of preparing that data. Subqueries in `FROM` are also userful when calculating aggregates of aggregate information.
 
 ##### Subqueries in FROM
 - Restructure and tranform your data
@@ -93,3 +94,34 @@ The final query returns top 3 teams based on home_goals scored in the 2011/2012 
   - Join them
 - Join a subquery to a table in `FROM`
   - Include a joining columns in both tables
+
+
+  ##### Practice: Joining Subqueries in FROM
+
+1. Construct a subquery that selects only matches with 10 or more total goals
+2. Inner join the subquery onto `country` in the main query
+3. Select `name` from `country` and count the `id` column from `match`
+
+  ```sql
+  SELECT
+    /* Selct country name and the count match IDs */
+    c.name AS country_name,
+    count(sub.id) AS matches
+  FROM country AS c
+  /* Inner join the subquery onto country */
+  /* Select the country id and match id columns */
+  INNER JOIN (SELECT country_id, id
+              FROM match
+              /* Filter the subquery by matches with 10+ goals */
+              WHERE (home_goal + away_goal) >= 10) AS sub
+  ON c.id = sub.country_id
+  GROUP BY country_name;
+  ```
+The match table in the European Soccer Database does not contain country or team names. You can get this information by joining it to the country table, and use this to aggregate information, such as the number of matches played in each country.
+
+If you're interested in filtering data from one of these tables, you can also create a subquery from one of the tables, and then join it to an existing table in the database. A subquery in FROM is an effective way of answering detailed questions that requires filtering or transforming data before including it in your final results.
+
+Your goal in this exercise is to generate a subquery using the match table, and then join that subquery to the country table to calculate information about matches with 10 or more goals in total!
+
+
+
