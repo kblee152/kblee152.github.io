@@ -96,7 +96,7 @@ The final query returns top 3 teams based on home_goals scored in the 2011/2012 
   - Include a joining columns in both tables
 
 
-  ##### Practice: Joining Subqueries in FROM
+##### Practice: Joining Subqueries in FROM
 
 1. Construct a subquery that selects only matches with 10 or more total goals
 2. Inner join the subquery onto `country` in the main query
@@ -123,5 +123,9 @@ If you're interested in filtering data from one of these tables, you can also cr
 
 Your goal in this exercise is to generate a subquery using the match table, and then join that subquery to the country table to calculate information about matches with 10 or more goals in total!
 
-
+| country_name | matches |
+|--------------|---------|
+| Netherlands  | 1       |
+| Spane        | 4       |
+| Germany      | 1       |
 
