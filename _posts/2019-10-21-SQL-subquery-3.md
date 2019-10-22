@@ -15,10 +15,6 @@ comments: true
 - Calculate the total matches
 
 
-
-
-
-
 ##### practice 1: Add a subquery to the SELECT clause
 
 Subqueries in `SELECT` statements generate a single value that allow you to pass an aggregate value down a dataframe. This is useful for performing calculations on data within your database.
