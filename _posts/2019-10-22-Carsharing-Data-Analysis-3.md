@@ -102,6 +102,10 @@ SELECT
    JOIN month_5_user USING (user_id)) AS month_5_cohort
    ```
 
+|   | month_1_cohort | month_2_cohort | month_3_cohort | month_4_cohort | month_5_cohort |
+|---|----------------|----------------|----------------|----------------|----------------|
+| 1 | 373            | 216            | 200            | 190            | 170            |
+
 
 ##### Percentage 구하기
 
@@ -160,3 +164,7 @@ SELECT
      JOIN month_5_user USING (user_id)) AS month_5_cohort
      )
 ```
+
+|   | month_1_pct | month_2_pct | month_3_pct | month_4_pct | month_5_pct |
+|---|-------------|-------------|-------------|-------------|-------------|
+| 1 | 100.0       | 58.0        | 54.0        | 51.0        | 46.0        |
