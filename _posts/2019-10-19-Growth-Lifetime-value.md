@@ -15,3 +15,8 @@ LTV = Margin * Retention Rate / (1 + Discount Rate - Retention Rate)
 - Margin: contant margin(매출 - 가변 비용)
 - Retention Rate: 재결제 비율
 - Discount Rate: 할인율
+
+
+
+참고 자료
+- [고객 생애 가치(Customer Lifetime Value 이해하기](https://sungmooncho.com/2011/11/21/customer-lifetime-value/)
