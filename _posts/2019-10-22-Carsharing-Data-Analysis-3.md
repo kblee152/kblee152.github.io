@@ -5,6 +5,9 @@ tags: [tableau, carsharing]
 comments: true
 ---
 
+##### Tabluea로 표현한 Cohort 
+![Cohort](../images/2019-10-22-Carsharing-Data-Analysis-3.png)
+
 Table: dump table
 
 | 필드 이름 | 유형 |
