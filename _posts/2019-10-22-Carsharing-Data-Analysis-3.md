@@ -168,3 +168,8 @@ SELECT
 |   | month_1_pct | month_2_pct | month_3_pct | month_4_pct | month_5_pct |
 |---|-------------|-------------|-------------|-------------|-------------|
 | 1 | 100.0       | 58.0        | 54.0        | 51.0        | 46.0        |
+
+
+
+##### Tabluea로 표현한 Cohort 
+![Cohort](../images/2019-10-22-Carsharing-Data-Analysis-3.png)
