@@ -5,7 +5,7 @@ tags: [Growth]
 comments: true
 ---
 
-#### Lifetime Value
+##### Lifetime Value
 - Customer Lifetime Value
 - CLTV = CLV = LTV = Lifetime Value
 - 미래 전체 기간동안 고객으로부터 발생하는 가치(순이익)에 대한 예측
