@@ -37,11 +37,6 @@ FROM `carsharing-256705.carsharing.dump`
 |---|-------|------------|
 | 1 | 47011 | 2875       |
 
-##### 2018년 01월 ~ 2018년 06월까지 월 단위의 Cohort 계산
-
-
-
-
 ##### Subquery를 이용한 방법
 
 ```sql
@@ -107,7 +102,7 @@ SELECT
 | 1 | 373            | 216            | 200            | 190            | 170            |
 
 
-##### Percentage 구하기
+##### Cohort Percentage 구하기
 
    ```sql
 SELECT
