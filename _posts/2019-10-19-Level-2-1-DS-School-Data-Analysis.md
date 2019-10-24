@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "DS-School Level 2 Pandas Pivot Table"
-tags: [DSSchool]
+title: "Level 2 Pandas Pivot Table"
+tags: [Pandas]
 comments: true
 ---
 

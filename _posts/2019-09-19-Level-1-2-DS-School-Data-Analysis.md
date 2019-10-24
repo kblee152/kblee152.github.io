@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "DS-School Level 1 DataFrame 생성하기"
-tags: [DSSchool]
+title: "Level 1 DataFrame 생성하기"
+tags: [Pandas]
 comments: true
 ---
 

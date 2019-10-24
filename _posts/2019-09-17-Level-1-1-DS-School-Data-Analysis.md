@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "DS-School Level 1 Pandas Series, Nan"
-tags: [DSSchool]
+title: "Level 1 Pandas Series, Nan"
+tags: [Pandas]
 comments: true
 ---
 

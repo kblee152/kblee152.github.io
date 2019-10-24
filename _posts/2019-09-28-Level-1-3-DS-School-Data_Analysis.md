@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "DS-School Level 1 Pandas File 읽기 및 기본 연산"
-tags: [DSSchool]
+title: "Level 1 Pandas File 읽기 및 기본 연산"
+tags: [Pandas]
 comments: true
 ---
 

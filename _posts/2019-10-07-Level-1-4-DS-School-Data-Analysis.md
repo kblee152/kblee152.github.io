@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "DS-School Level 1 Pandas 검색/색인"
-tags: [DSSchool]
+title: "Level 1 Pandas 검색/색인"
+tags: [Pandas]
 comments: true
 ---
 ##### Table: order
