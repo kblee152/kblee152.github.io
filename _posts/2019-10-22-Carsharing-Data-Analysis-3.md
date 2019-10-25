@@ -5,7 +5,7 @@ tags: [tableau, carsharing]
 comments: true
 ---
 
-##### SQL 분석 후 Tabluea로 표현한 Cohort Chart
+##### Tabluea Visualization: Cohort Chart
 ![Cohort](../images/2019-10-22-Carsharing-Data-Analysis-3.png)
 
 Table: dump table
