@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Business Valuation Modeling Overview"
+title: "Accounting: Business Valuation Modeling Overview"
 tags: [Accounting]
 comments: true
 ---

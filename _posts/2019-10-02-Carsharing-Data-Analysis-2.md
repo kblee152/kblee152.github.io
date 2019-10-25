@@ -5,6 +5,14 @@ tags: [tableau, carsharing]
 comments: true
 ---
 
+1. 일자별 Trip의 수
+2. 스팟별 Trip의 수
+3. 시작 Station, 도착 Station 별 개수
+4. Trip을 시작하는 특정 날짜 및 시간에 대한 Count
+5. 2019년 1월 1일부터 시간대별 추세
+6. 요일별 사용자 수 Count
+
+
 Table: dump table
 
 | 필드 이름 | 유형 |
@@ -25,13 +33,6 @@ Table: dump table
 | return_spot_id  | INTEGER  |
 | user_id  | INTEGER  |
 |----
-
-1. 일자별 Trip의 수
-2. 스팟별 Trip의 수
-3. 시작 Station, 도착 Station 별 개수
-4. Trip을 시작하는 특정 날짜 및 시간에 대한 Count
-5. 2019년 1월 1일부터 시간대별 추세
-6. 요일별 사용자 수 Count
 
 #### 1. 일자별 Trip의 수
 
