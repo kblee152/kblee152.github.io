@@ -8,6 +8,8 @@ comments: true
 Datacamp `Intermediate SQL` Chapter_2_Short-and-Simple-Subqueries  
 Subqueries in FROM 요약
 
+참고: 하나의 SQL 문장에 속하는 또 다른 SQL 문장으로, 두 번 이상의 질의를 통하여 얻을 수 있는 결과를 한 번의 질의로 해결할 수 있음. 복잡한 SQL 문장을 간략히 표현할 수 있고 DBMS의 데이터 처리 속도도 빠르게 향상 시킬수 있음.  <mark>`FROM`절에서는 조건에 맞는 대상을 선정한 후 요약하거나 테이블을 조인할 때 사용하며 첫 번째 용도로 이용할 경우 테이블 별칭을 해주어야 함.</mark>
+
 subqueries in `WHERE` can only return a single column. if you want to return a more complex set of results, subquery in the `FROM` statement are a robust tool for restructuring and transforming your data. Subqueries in a `FROM` statement are a common way of preparing that data. Subqueries in `FROM` are also userful when calculating aggregates of aggregate information.
 
 ##### Subqueries in FROM
