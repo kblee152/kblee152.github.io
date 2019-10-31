@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "HBR-소비자가 설문에 응답한대로 지갑을 열지 않는 이유는?"
+title: "HBR-소비자가 설문에 응답한대로 지갑을 열지 않는 이유"
 tags: [DBR]
 comments: true
 ---
