@@ -5,6 +5,8 @@ tags: [tableau, carsharing]
 comments: true
 ---
 
+![raw_data](../images/2019-11-04-Carsharing-Data-Analysis-4-3.png)
+
 ```python
 import pandas as pd
 import matplotlib.pyplot as plt
@@ -85,5 +87,3 @@ table = table.loc[table_rows]
 ```python
 table.plot(kind = "line", figsize = [18, 5], color = 'blue', marker = 'o', linestyle = 'dashed')
 ```
-
-![raw_data](../images/2019-11-04-Carsharing-Data-Analysis-4-3.png)
