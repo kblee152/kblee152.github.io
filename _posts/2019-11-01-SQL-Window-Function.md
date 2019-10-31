@@ -29,7 +29,8 @@ Thus, you can't compare aggregate values to non-aggregate data
 - Perform calculations on an already generated result set (a window)
 - Aggregate calculations
   - Similar to subqueries in `SELECT`
-  - Running totals, rankings, mmoving averages
+  - Running totals, rankings, moving averages
+
 Window functions are a class of functions that perform calculations on a result set that has already been generated, also referred to as a "window"
 
 ##### What's a window function?
