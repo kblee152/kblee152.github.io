@@ -49,10 +49,44 @@ ORDER BY row
 | A001       | 94    | 1   | 94        | 92.00     | A001        | D004       |
 | D001       | 90    | 2   | 184       | 88.67     | A001        | D004       |
 
+---
+
 WINDOW FRAME
 : 파티션 내의 시작점 및 끝점을 지정하여 파티션 내의 행을 추가로 제한. 논리적 연결이나 물리적 연결을 통해 현재 행을 기준으로 한 행 범위를 지정하여 수행. 물리적 연결은 ROW 절을 사용하여 수행
 
 ROW절
 : 현재 행 이전 또는 다음의 고정 행 수를 지정하여 파티션 내의 행 수를 제한. ROW 절에는 ORDER BY절을 지정해야함
 
+---
 
+```sql
+SELECT
+    product_id,
+   
+    -- 점수 순서로 유일한 순위 선정
+    ROW_NUMBER() OVER(ORDER BY score DESC) AS row,
+
+    -- 가장 앞 순위부터 가장 뒷 순위까지의 범위를 대상으로 상품 ID 집약
+    array_agg(product_id)
+        OVER(ORDER BY score DESC
+            ROWS BETWEEN UNBOUNDED PRECEDING AND UNBOUNDED FOLLOWING)
+    AS whole_agg
+
+    -- 가장 앞 순위부터 현재까지의 범위를 대상으로 상품 ID 집약
+    array_agg(product_id)
+        OVER(ORDER BY score DESC
+            ROWS BETWEEN UNBOUNDED PRECEDING AND CURRENT ROW)
+    AS cum_agg
+
+    -- 순위 하나 앞과 하나 뒤까지의 범위를 대상으로 샹품 ID 집약
+    array_agg(product_id)
+        OVER(ORDER BY score DESC
+            ROWS BETWEEN 1 PRECEDING AND 1 FOLLOWING)
+    AS local_agg 
+    FROM popular_products
+    WHERE category = 'action'
+    ORDER BY row
+    ;
+    ```
+
+> 윈도 함수에 프레임 지정을 하지 않으면 ORDER BY 구문이 없는 경우 모든 행, ORDER BY 구문이 있는 경우 **첫 행에서 현재 행**까지가 디폴트 프레임으로 지정
