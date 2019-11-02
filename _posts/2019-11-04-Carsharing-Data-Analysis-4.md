@@ -87,3 +87,6 @@ table = table.loc[table_rows]
 ```python
 table.plot(kind = "line", figsize = [18, 5], color = 'blue', marker = 'o', linestyle = 'dashed')
 ```
+
+##### 참조
+- [데이터사이언스스쿨(날짜와 시간 다루기)](https://datascienceschool.net/view-notebook/465066ac92ef4da3b0aba32f76d9750a/)
