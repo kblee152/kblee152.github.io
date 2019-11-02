@@ -43,3 +43,8 @@ FROM popular_products
 ORDER BY row
 ;
 ```
+
+| product_id | score | row | cum_score | local_avg | first_value | last_value |
+|------------|-------|-----|-----------|-----------|-------------|------------|
+| A001       | 94    | 1   | 94        | 92.00     | A001        | D004       |
+| D001       | 90    | 2   | 184       | 88.67     | A001        | D004       |
