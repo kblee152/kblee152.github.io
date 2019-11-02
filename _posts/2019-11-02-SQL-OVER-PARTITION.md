@@ -8,6 +8,7 @@ comments: true
 ##### OVER and PARTITION BY
 - Calculate separate values for different categories
 - Calculate different calculations in the same column
+
 ```sql
 AVG(home_goal) OVER(PARTITION BY season)
 ```
@@ -17,6 +18,7 @@ This will then return the overall average for, or `PARTITION BY` each season
 
 ##### Partition your data
 - How many goals were scored in each match, and how did that compare to the overall average?
+
 ```sql
 SELECT 
     date,
@@ -31,6 +33,7 @@ FROM match;
 | 2012-05-01 | 2     | 2.73        |
 
 - How many goals were scored in each match, and how did that compare to the season's average?
+
 ```sql
 SELECT
     date,
