@@ -24,6 +24,7 @@ SELECT
     AVG(home_goal + away_goal) OVER() AS oversall_avg
 FROM match;
 ```
+
 | date       | goals | overall_avg |
 |------------|-------|-------------|
 | 2011-12-17 | 3     | 2.73        |
