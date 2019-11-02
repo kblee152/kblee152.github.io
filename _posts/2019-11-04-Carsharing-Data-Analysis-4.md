@@ -82,7 +82,7 @@ table_rows = ["1 ~ 2", "2 ~ 3", "3 ~ 4", "4 ~ 5", "5 ~ 6", "6 ~ 7", "7 ~ 8", "8 
 table = table.loc[table_rows]
 ```
 
-![raw_data](../images/2019-11-04-Carsharing-Data-Analysis-4-2.png)
+![raw_data](../images/2019-11-04-Carsharing-Data-Analysis-4-2.png){: .center-image}
 
 ```python
 table.plot(kind = "line", figsize = [18, 5], color = 'blue', marker = 'o', linestyle = 'dashed')
@@ -90,3 +90,4 @@ table.plot(kind = "line", figsize = [18, 5], color = 'blue', marker = 'o', lines
 
 ##### 참조
 - [데이터사이언스스쿨(날짜와 시간 다루기)](https://datascienceschool.net/view-notebook/465066ac92ef4da3b0aba32f76d9750a/)
+- Python for Data Analysis, O'REILLY
