@@ -1,3 +1,9 @@
+---
+layout: post
+title: "Pandas 자료구조: Series"
+tags: [Pandas]
+comments: true
+---
 
 ##### Series
 Series는 일련의 객체를 담을 수 있는 1차원 배열 같은 자료구조로 색인(index)이라는 배열의 데이터와 연관된 이름을 가지고 있음.
