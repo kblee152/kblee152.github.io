@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Level 1 Pandas Series, Nan"
+title: "Pandas 자료구조: Series"
 tags: [Pandas]
 comments: true
 ---
