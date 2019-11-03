@@ -86,7 +86,6 @@ SELECT
     FROM popular_products
     WHERE category = 'action'
     ORDER BY row
-    ;
     ```
 
 > 윈도 함수에 프레임 지정을 하지 않으면 ORDER BY 구문이 없는 경우 모든 행, ORDER BY 구문이 있는 경우 **첫 행에서 현재 행**까지가 디폴트 프레임으로 지정
