@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Carsharing 데이터 분석: MAU, DAU"
-tags: [tableau, carsharing]
+tags: [data-analysis]
 comments: true
 ---
 

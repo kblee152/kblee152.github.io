@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Carsharing 데이터 분석 2: Trip의 수, 추세 등"
-tags: [tableau, carsharing]
+tags: [data-analysis]
 comments: true
 ---
 

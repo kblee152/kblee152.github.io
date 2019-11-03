@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Carsharing 데이터 분석 4: 이용 기간 분석 및 시각화"
-tags: [tableau, carsharing]
+tags: [data-analysis]
 comments: true
 ---
 

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "CitiBike 데이터 분석"
-tags: [tableau]
+tags: [data-analysis]
 comments: true
 ---
 
