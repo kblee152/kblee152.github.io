@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "SQL Common Table Expressions"
-tags: [SQL]
+title: "Intermediate SQL Common Table Expressions"
+tags: [Datacamp, SQL]
 comments: true
 ---
 

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "SQL Subqueries in FROM"
-tags: [SQL]
+title: "Intermediate SQL Subqueries in FROM"
+tags: [Datacamp, SQL]
 comments: true
 ---
 

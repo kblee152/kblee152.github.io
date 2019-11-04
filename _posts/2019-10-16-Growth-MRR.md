@@ -22,7 +22,6 @@ New MRR + Add-on MRR - Churn MRR = growth MRR
 
 ##### MRR 측정과 활용의 중요성
 - Product-Market Fit의 적합성을 나타내는 수치
-- 
 
 
 ##### 참고자료

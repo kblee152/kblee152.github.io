@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "SQL Window Functions"
-tags: [SQL]
+title: "Intermediate SQL Window Functions"
+tags: [Datacamp, SQL]
 comments: true
 ---
 

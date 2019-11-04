@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "SQL Window Functions OVER AND PARTITION BY"
-tags: [SQL]
+title: "Intermediate SQL Window Functions OVER AND PARTITION BY"
+tags: [Datacamp, SQL]
 comments: true
 ---
 
