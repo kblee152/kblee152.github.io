@@ -6,7 +6,7 @@ comments: true
 ---
 
 ##### 윈도 프레임 지정
-`ORDER BY`구문과 `SUM/AVG`등의 집약 함수를 조합하면, 집약 함수의 적용 범위를 유연하게 지정할 수 있음. 프레임 지정이란 현재 레코드 위치를 기반으로 상대적인 윈도를 정의하는 구문. 가장 기본적으로 `ROWS BETWEEN start ADN edn`, start와 end에는 `CURRENT ROW`, `n PRECEDING`, `n FOLLOWING`, `UNBOINDED PRECEDING`, `UNBOUNDED FOLLOWING` 등의 키워드를 지정. 
+`ORDER BY`구문과 `SUM/AVG`등의 집약 함수를 조합하면, 집약 함수의 적용 범위를 유연하게 지정할 수 있음. 프레임 지정이란 현재 레코드 위치를 기반으로 상대적인 윈도를 정의하는 구문. 가장 기본적으로 `ROWS BETWEEN start ADN end`, start와 end에는 `CURRENT ROW`, `n PRECEDING`, `n FOLLOWING`, `UNBOINDED PRECEDING`, `UNBOUNDED FOLLOWING` 등의 키워드를 지정. 
 
 ```sql
 SELECT
@@ -51,9 +51,7 @@ ORDER BY row
 
 
 - `WINDOW FRAME`: 파티션 내의 시작점 및 끝점을 지정하여 파티션 내의 행을 추가로 제한. 논리적 연결이나 물리적 연결을 통해 현재 행을 기준으로 한 행 범위를 지정하여 수행. 물리적 연결은 ROW 절을 사용하여 수행
-
 - `ROW절`: 현재 행 이전 또는 다음의 고정 행 수를 지정하여 파티션 내의 행 수를 제한. ROW 절에는 ORDER BY절을 지정해야함  
-
 
 ```sql
 SELECT
