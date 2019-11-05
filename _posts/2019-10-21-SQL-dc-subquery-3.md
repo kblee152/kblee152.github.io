@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Intermediate SQL Subquerys in SELECT"
-tags: [Datacamp, SQL]
+tags: [Datacamp]
 comments: true
 ---
 

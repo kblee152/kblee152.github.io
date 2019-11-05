@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Intermediate SQL Subquery: WHERE are the Subqueires?"
-tags: [Datacamp, SQL]
+tags: [Datacamp]
 comments: true
 ---
 

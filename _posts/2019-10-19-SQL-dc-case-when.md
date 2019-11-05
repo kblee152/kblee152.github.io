@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Intermediate SQL CASE WHEN"
-tags: [Datacamp, SQL]
+tags: [Datacamp]
 comments: true
 ---
 

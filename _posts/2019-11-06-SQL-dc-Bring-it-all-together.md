@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Intermediate SQL Bring it all together(CASE, Subquery, Window Function"
-tags: [Datacamp, SQL]
+tags: [Datacamp]
 comments: true
 ---
 
