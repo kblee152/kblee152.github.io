@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Intermediate SQL Bring it all together(CASE, Subquery, Window Function"
+title: "Intermediate SQL Bring it all together(CASE, Subquery, Window Function)"
 tags: [Datacamp]
 comments: true
 ---
@@ -73,6 +73,7 @@ SELECT DISTINCT
     home.team_long_name AS home_team,
     away.team_long_name AS away_team,
     m.home_goal, m.away_goal
+
 -- Join the CTEs onto the match table
 FROM match AS m
 LEFT JOIN home ON m.id = home.id
