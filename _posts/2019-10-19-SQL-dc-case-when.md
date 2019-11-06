@@ -5,6 +5,14 @@ tags: [Datacamp]
 comments: true
 ---
 
+##### CASE statements
+- Contains a `WHEN`, `THEN`, and `ELSE` statement, finished with `END`
+
+```sql
+CASE WHEN x = 1 THEN 'a'
+     WHEN x = 2 THEN 'b'
+     ELSE 'c' END AS new_column
+```
 
 ##### In CASE you need to aggregate
 `CASE` statements are great for
