@@ -20,7 +20,7 @@ plt.plot(year, pop)
 plt.show()
 ```
 
-![Image-1](../images/2019-11-07-Python-dc-basic-plots-with-matplotlib-1.jpg){: .center-image}
+![Image-1](../images/2019-11-07-Python-dc-basic-plots-with-matplotlib-1.png){: .center-image}
 
 #### Scatter plot
 
