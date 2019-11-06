@@ -52,3 +52,13 @@ plt.show()
 ```
 ![Image-1](../images/2019-11-07-Python-dc-basic-plots-with-matplotlib-5.png){: .center-image}
 
+#### Histogram: bins
+To control the number of bins to divide your data in, you can set the `bins` argument  
+The number of bins is pretty important. Too few bins will oversimplify reality and won't show you the details. Too many bins will overcomplicate reality and won't show the bigger picture.
+
+```python
+plt.his(life_exp, bins = 20)
+plt.show()
+```
+
+![Image-1](../images/2019-11-07-Python-dc-basic-plots-with-matplotlib-6png){: .center-image}
