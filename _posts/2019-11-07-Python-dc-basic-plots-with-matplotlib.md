@@ -34,3 +34,21 @@ plt.scatter(year, pop)
 plt.show()
 ```
 ![Image-1](../images/2019-11-07-Python-dc-basic-plots-with-matplotlib-2.png){: .center-image}
+
+#### Histogram
+- Explore dataset
+- Get idea about distribution
+
+![Image-1](../images/2019-11-07-Python-dc-basic-plots-with-matplotlib-3.png){: .center-image}
+
+![Image-1](../images/2019-11-07-Python-dc-basic-plots-with-matplotlib-4.png){: .center-image}
+
+```python
+import matplotlib.pyplot as plt
+
+values = [0, 0.6, 1.4, 1.6, 2.2, 2.5, 2.6, 3.2, 3.5, 3.9, 4.2, 6]
+plt.his(values, bins = 3)
+plt.show()
+```
+![Image-1](../images/2019-11-07-Python-dc-basic-plots-with-matplotlib-5.png){: .center-image}
+
