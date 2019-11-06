@@ -61,4 +61,4 @@ plt.his(life_exp, bins = 20)
 plt.show()
 ```
 
-![Image-1](../images/2019-11-07-Python-dc-basic-plots-with-matplotlib-6png){: .center-image}
+![Image-1](../images/2019-11-07-Python-dc-basic-plots-with-matplotlib-6.png){: .center-image}
