@@ -33,3 +33,4 @@ pop = [2.519, 3.692, 5.263, 6.972]
 plt.scatter(year, pop)
 plt.show()
 ```
+![Image-1](../images/2019-11-07-Python-dc-basic-plots-with-matplotlib-2.png){: .center-image}
