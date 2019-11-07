@@ -37,6 +37,8 @@ All other matches are categorized as a loss or tie.
 #### What ELSE is being excluded?
 - What's in your `ELSE` clause?
 
+When testing logical conditions, it's important to carefully consider which rows of your data are part of your ELSE clause, and if they're categorized correctly.
+
 Here's the same CASE statement from the previous slide, but the WHERE filter has been removed. Without this filter, ELSE clause will categorize ALL matches played by anyone, who don't meet these first two conditions, as Loss or tie.
 
 ```sql
@@ -55,8 +57,44 @@ FROM match
 | 2011-07-30 | 9998        | 9985        | Loss or tie |
 
 #### What's NULL?
+
 It's important to consider what your `ELSE` clause is doing
-- 
+
+```sql
+SELECT date,
+CASE WHEN date > '2015-01-01' THEN 'More Recently'
+     WHEN date < '2012-01-01' THEN 'Older'
+     END AS date_category
+FROM match;
+SELECT date,
+CASE WHEN date > '2015-01-01' THEN 'More Recently'
+     WHEN date < '2012-01-01' THEN 'Older'
+     ELSE NULL END AS date_category
+```
+Below query both return identical result -- a table with quite a few null results
+
+
+| date       | date_category |
+|------------|---------------|
+| 2011-11-18 | Older         |
+| 2012-02-11 | NULL          |
+
+But what if you want to exclude them?  
+In order to filter a query by a CASE statement  
+You include the entire CASE statement, except its alias, in WHERE
+
+```sql
+SELECT date, season,
+    CASE WHEN hometeam_id = 8455 AND home_goal > away_goal
+            THEN 'Chelsea home win'
+         WHEN awayteam_id = 8455 AND home_goal < away_goal
+            THEN 'Chelsea away win' END AS outcome
+FROM match
+WHERE CASE WHEN hometeam_id = 8455 AND home_goal > away_goal
+            THEN 'Chelsea home win'
+           WHEN awayteam_id = 8455 AND home_gola < away_goal
+            THEN 'Chelsea away win' END IS NOT NULL;
+```
 
 
 
@@ -65,6 +103,7 @@ It's important to consider what your `ELSE` clause is doing
 - Categorizing data
 - Filtering data
 - Aggregating data
+
 
 ##### CASE WHEN with COUNT
 
