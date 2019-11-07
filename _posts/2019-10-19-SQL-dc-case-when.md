@@ -14,6 +14,52 @@ CASE WHEN x = 1 THEN 'a'
      ELSE 'c' END AS new_column
 ```
 
+#### CASE WHEN ...AND then some
+- Add multiple logical conditions to your `WHEN` clause
+```sql
+SELECT date, hometeam_id, awayteam_id,
+    CASE WHEN hometeam_id = 8455 AND home_goal > away_goal
+            THEN 'Chelsea home win'
+         WHEN awayteam_id = 8455 AND home_goal < away_goal
+            THEN 'Chelsea away win'
+         ELSE 'Loss or tie'
+FROM match
+WHERE hometeam_id = 8455 OR awayteam_id = 8455;
+```
+
+All other matches are categorized as a loss or tie.
+
+| date       | hometeam_id | awayteam_id | outcome          |
+|------------|-------------|-------------|------------------|
+| 2011-08-14 | 10194       | 8455        | Loss or tie      |
+| 2011-08-20 | 8455        | 8659        | Chelsea home win |
+
+#### What ELSE is being excluded?
+- What's in your `ELSE` clause?
+
+Here's the same CASE statement from the previous slide, but the WHERE filter has been removed. Without this filter, ELSE clause will categorize ALL matches played by anyone, who don't meet these first two conditions, as Loss or tie.
+
+```sql
+SELECT date, hometeam_id, awayteam_id,
+    CASE WHEN hometeam_id = 8455 AND home_goal > away_goal
+            THEN 'Chelsea home win'
+         WHEN awayteam_id = 8455 AND home_goal < away_goal
+            THEN 'Chelsea away win'
+         ELSE 'Loss or tie'
+FROM match
+```
+
+| date       | hometeam_id | awayteam_id | outcome     |
+|------------|-------------|-------------|-------------|
+| 2011-07-29 | 1773        | 8635        | Loss or tie |
+| 2011-07-30 | 9998        | 9985        | Loss or tie |
+
+#### What's NULL?
+It's important to consider what your `ELSE` clause is doing
+- 
+
+
+
 ##### In CASE you need to aggregate
 `CASE` statements are great for
 - Categorizing data
