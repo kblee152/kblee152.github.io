@@ -104,7 +104,6 @@ WHERE CASE WHEN hometeam_id = 8455 AND home_goal > away_goal
 - Filtering data
 - Aggregating data
 
-
 ##### CASE WHEN with COUNT
 
 ```sql
@@ -159,3 +158,22 @@ GROUP BY season;
 | 2011/2012 | 0.75         | 0.5          |
 | 2012/2013 | 0.86         | 0.67         |
 | 2013/2014 | 0.94         | 0.67         |
+
+
+##### Calculating percent with CASE and AVG
+
+```sql
+SELECT 
+	c.name AS country,
+    -- Round the percentage of tied games to 2 decimal points
+	ROUND(AVG(CASE WHEN m.season='2013/2014' AND m.home_goal = m.away_goal THEN 1
+			 WHEN m.season='2013/2014' AND m.home_goal != m.away_goal THEN 0
+			 END),2) AS pct_ties_2013_2014,
+	ROUND(AVG(CASE WHEN m.season='2014/2015' AND m.home_goal = m.away_goal THEN 1
+			 WHEN m.season='2014/2015' AND m.home_goal != m.away_goal THEN 0
+			 END),2) AS pct_ties_2014_2015
+FROM country AS c
+LEFT JOIN matches AS m
+ON c.id = m.country_id
+GROUP BY country;
+```
