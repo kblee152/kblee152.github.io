@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Accounting: 자본예산/자본예산모형(1)"
-tags: [Datacamp]
+tags: [Accounting]
 comments: true
 use_math: true
 ---
