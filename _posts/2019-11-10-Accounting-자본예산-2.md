@@ -4,6 +4,7 @@ title: "Accounting: 자본예산/자본예산모형(2) - 화폐의 시간가치"
 tags: [Accounting]
 comments: true
 use_math: true
+comments: true
 ---
 
 #### 자본예산모형
