@@ -11,6 +11,7 @@ comments: true
 SELECT COUNT(trip_id)
 FROM FROM `bigquery-public-data.austin_bikeshare.bikeshare_trips` LIMIT 1000
 ```
+
 | 행 | fO_     |
 |----|---------|
 | 1  | 1179147 |
@@ -82,3 +83,10 @@ SELECT
 
 
 ##### start_station_id별 전후 duration_minutes
+
+
+
+참고 자료
+- [A Tale of Twenty-Two Million Citi Bike Rides: Analyzing the NYC Bike Share System](https://toddwschneider.com/posts/a-tale-of-twenty-two-million-citi-bikes-analyzing-the-nyc-bike-share-system/)
+- [Using NYC Citi Bike Data to Help Bike Enthusiasts Find their Mates](https://medium.com/@clairekeser/using-nyc-citi-bike-data-to-help-bike-enthusiasts-find-their-mates-70a661c098f1)
+- [Citi Bike in NYC Analysis in Winter 2014-2018](https://public.tableau.com/profile/nami.tokunaga8823#!/vizhome/citibikeAnalysis/citibikeAnalysis)
