@@ -45,6 +45,37 @@ ORDER BY date
 
 ![Image-1](../images/2019-11-20-Citibike-Data-Analysis-1.png){: .center-image}
 
+```python
+import pandas as pd
+
+query = """
+ SELECT 
+  DATE(start_time) AS date,
+  COUNT(trip_id) AS count
+FROM `bigquery-public-data.austin_bikeshare.bikeshare_trips`
+GROUP BY date
+ORDER BY date
+"""
+df = pd.read_gbq(query = query, project_id='******', dialect='standard')
+
+df.head()
+```
+
+```python
+import matplotlib.pyplot as plt
+import seaborn as sns
+
+df['year'] = df['date'].dt.year
+df['month'] = df['date'].dt.month
+df['day'] = df['date'].dt.day
+
+plt.figure(figsize = [25, 8])
+sns.lineplot(data = df, x = 'month', y = 'count', hue = 'year')
+```
+
+![Image-1](../images/2019-11-20-Citibike-Data-Analysis-3.png){: .center-image}
+
+
 
 ##### subscriber_typr별 trip의 수
 
