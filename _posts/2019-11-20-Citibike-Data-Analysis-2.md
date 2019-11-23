@@ -22,3 +22,4 @@ LEFT JOIN `bigquery-public-data.austin_bikeshare.bikeshare_stations` AS right_si
   ON left_side.end_station_id = right_side.station_id
 ```
 
+![Image-2](../images/2019-11-20-Citibike-Data-Analysis-2-2.png){: .center-image}
