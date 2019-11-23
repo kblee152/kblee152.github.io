@@ -6,4 +6,4 @@ comments: true
 ---
 
 
-![Image-1](../images/2019-11-20-Citibike-Data-Analysis-2-1.png){: .center-image}
+![Image-1](../images/2019-11-20-Citibike-Data-Analysis-2-1.png/400x200){: .center-image}
