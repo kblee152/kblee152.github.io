@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "CitiBike 데이터 분석-지화 데이터 시각화"
+title: "CitiBike 데이터 분석-지리 데이터 시각화"
 tags: [data-analysis]
 comments: true
 ---
