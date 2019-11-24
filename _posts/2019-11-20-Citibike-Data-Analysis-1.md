@@ -59,6 +59,8 @@ ORDER BY date
 | 1  | 2013-12-21 | 103   |
 | 2  | 2013-12-22 | 117   |
 
+위 쿼리를 통해 추출한 데이터는 추가 작업 없이 `datastudio`에서 년, 월, 일별 시계열 차트로 분석이 가능
+
 ![Image-1](../images/2019-11-20-Citibike-Data-Analysis-1.png){: .center-image}
 
 ```python
