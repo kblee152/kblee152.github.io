@@ -7,6 +7,8 @@ comments: true
 
 `Colab`, `Google Bigquery`, `Datastudio`의 환경에서 분석하고 최종 대쉬보드는 `Redash`로 구현. 평소 궁금했거나 담당자의 추측/감각에 의존하여 운영하던 방식에서 벗어나 데이터 기반의 의사결정을 지원. (테스트 단계이므로)다양한 방법으로 추출해보고 회원, 시간, 날짜, 기상, 지리적 조건, 하드웨어 수명 관리 등 영업(매출 관리), 마케팅, 운영 관리를 위해 주요 지표를 선정하고 대시보드를 통해 내부 구성원에서 공유.
 
+----
+
 ##### Problem: 심야 시간 가동률을 올리기 위하여 할인 이벤트 또는 가격 조정
 ##### 기존 방식 VS 데이터 기반의 의사 결정
 ##### Risk
@@ -21,6 +23,19 @@ comments: true
 1. 주요 KPI 설정하고 정렬하기
     - 가동률
 2. 대쉬보드 구축
+
+
+##### Riders per Age Group
+##### Distribution of Riders per Hour of the Day (weekdays)
+##### Median Age per Departure Station
+##### Rides by Hour of the Day
+##### Duration Minutes
+##### Most Popular Roads
+##### Trips Between Manhattan and Outer Boroughs
+##### Temperature vs Daily Usage
+##### Precipitation vs Daily Usage
+##### Snow Depth vs Daily Usage
+
 
 ##### 총 trip의 수
 
