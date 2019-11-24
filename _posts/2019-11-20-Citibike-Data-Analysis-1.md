@@ -20,11 +20,6 @@ comments: true
 
 ----
 
-1. 주요 KPI 설정하고 정렬하기
-    - 가동률
-2. 대쉬보드 구축
-
-
 ##### Riders per Age Group
 ##### Distribution of Riders per Hour of the Day (weekdays)
 ##### Median Age per Departure Station
