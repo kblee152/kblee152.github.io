@@ -102,7 +102,7 @@ sns.pointplot(data = df, x = 'month', y = 'count', hue = 'year')
 ![Image-1](../images/2019-11-20-Citibike-Data-Analysis-3.png){: .center-image}
 
 
-##### subscriber_type별 trip의 수
+##### subscriber_type별 Trip Count
 
 ```sql
 SELECT 
@@ -115,7 +115,7 @@ SELECT
 
 ![Image-1](../images/2019-11-20-Citibike-Data-Analysis-2.png){: .center-image}
 
-##### 시작 station과 도착 station별 개수(제일 많은 구간은?)
+##### 시작 station과 도착 station별 Trip Count
 ```sql
 SELECT 
   start_station_id,
@@ -131,8 +131,25 @@ ORDER BY trip_cnt DESC
 | 1  | 3798             | 3798           | 13164    |
 | 2  | 2575             | 2575           | 12465    |
 
+```python
+table = pd.pivot_table(raw_data, 
+                       index = ['start station id', 'end station id'], 
+                       values = 'Age', 
+                       fill_value = 0, 
+                       aggfunc = len)
 
-##### 시간대 별 trip count
+table.columns = ['total']
+table = table.sort_values(by = 'total', ascending = False)
+
+table.head(10)
+```
+
+상위 10개 구간 Trip Count에 대한 지리 정보 시각화
+
+![Image-1](../images/2019-11-20-Citibike-Data-Analysis-4.png){: .center-image}
+
+
+##### 시간대 별 Trip Count
 ```sql
 SELECT start_hour, COUNT(trip_id) as cnt
 FROM (
@@ -153,12 +170,32 @@ GROUP BY start_hour
 ORDER BY cnt DESC
 ```
 
-##### 무슨 요일에 제일 사용자가 많을까?
-###### 요일별 시간대 패턴이 다를?까?
-###### 요일마다 제일 count가 많은 시간대는 어떻게 구해야 할까?
-##### 제일 많이 운행한 bikeid?
-##### 제일 오래 여행한 trip_id?
-##### 제일 오래 여행한 여행은 몇시간 여행?
+##### 요일별 Trip Count
+```sql
+SELECT weekday, COUNT(trip_id) AS count
+FROM (
+  SELECT FORMAT_DATETIME("%u", DATETIME(start_time)) AS weekday,
+  *
+  FROM `bigquery-public-data.austin_bikeshare.bikeshare_trips` 
+  )
+ GROUP BY weekday
+ ORDER BY count desc
+ ```
+
+
+###### 요일/시간대별 Trip Count
+```sql
+SELECT weekday, start_hour, COUNT(trip_id) AS count
+FROM (
+  SELECT DATETIME_TRUNC(DATETIME(start_time), hour) AS start_hour,
+  FORMAT_DATETIME("%u", DATETIME(start_time)) AS weekday,
+  *
+  FROM `bigquery-public-data.austin_bikeshare.bikeshare_trips` 
+  )
+ GROUP BY weekday, start_hour
+ ORDER BY count desc
+ ```
+
 
 
 
