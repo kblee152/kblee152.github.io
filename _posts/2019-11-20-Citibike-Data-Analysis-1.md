@@ -182,7 +182,7 @@ FROM (
  ```
 
 
-###### 요일/시간대별 Trip Count
+##### 요일/시간대별 Trip Count
 ```sql
 SELECT weekday, start_hour, COUNT(trip_id) AS count
 FROM (
@@ -194,20 +194,6 @@ FROM (
  GROUP BY weekday, start_hour
  ORDER BY count desc
  ```
-
-
-
-
-##### trip별 운행 시간의 total
-##### bike별 운행 시간 total
-##### bike별 운행 횟수, 평균까지 추가
-##### start_station - end_station 별 토탈, 횟수, 평균
-##### start_station_id, bikeid별 duration_minutes 많은 순
-###### MAX값만 가져오기
-
-
-##### start_station_id별 전후 duration_minutes
-
 
 
 참고 자료
