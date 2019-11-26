@@ -4,12 +4,14 @@ title: About
 permalink: /about/
 ---
 
-Some information about you!
+사업기획자로 일하고 있습니다.  
+재무/회계와 데이터 분석에 관심이 많습니다.
+
 
 ### More Information
 
-A place to include any other types of information that you'd like to include about yourself.
+
 
 ### Contact me
 
-[email@domain.com](mailto:email@domain.com)
+[E-mail](mailto:kblee152@gmail.com)
