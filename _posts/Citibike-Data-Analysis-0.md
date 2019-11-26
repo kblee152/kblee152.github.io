@@ -16,8 +16,8 @@ for fn in uploaded.keys():
   print('User uploaded file "{name}" with length {length} bytes'.format(name = fn, length = len(uploaded[fn])))
 
 # 디렉토리 내 위치한 파일을 병합하고 저장
-input_file = r'C:/Users/kblee/documents/citibike-dataset' # csv파일들이 있는 디렉토리 위치
-output_file = r'C:/Users/kblee/documents/citibike-dataset/result.csv' # 병합하고 저장하려는 파일명
+input_file = r'C:/Users/******' # csv파일들이 있는 디렉토리 위치
+output_file = r'C:/Users/******/result.csv' # 병합하고 저장하려는 파일명
 
 allFile_list = glob.glob(os.path.join(input_file, 'JC-20*')) # glob함수로 sales_로 시작하는 파일e들을 모은다
 print(allFile_list)
@@ -40,7 +40,7 @@ query = """
 FROM `bigquery-public-data.austin_bikeshare.bikeshare_trips`
 GROUP BY date
 ORDER BY date
-  """
+"""
 
-df = pd.read_gbq(query = query, project_id='cb-259807', dialect='standard')
+df = pd.read_gbq(query = query, project_id='******', dialect='standard')
 ```
