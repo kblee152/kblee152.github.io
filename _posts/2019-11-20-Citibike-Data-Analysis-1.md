@@ -25,7 +25,6 @@ comments: true
 ##### Median Age per Departure Station
 ##### Rides by Hour of the Day
 ##### Duration Minutes
-##### Most Popular Roads
 ##### Trips Between Manhattan and Outer Boroughs
 ##### Temperature vs Daily Usage
 ##### Precipitation vs Daily Usage
@@ -115,7 +114,7 @@ SELECT
 
 ![Image-1](../images/2019-11-20-Citibike-Data-Analysis-2.png){: .center-image}
 
-##### 시작 station과 도착 station별 Trip Count
+##### 시작 station과 도착 station별 Trip Count(Most Popular Roads)
 ```sql
 SELECT 
   start_station_id,
@@ -144,7 +143,7 @@ table = table.sort_values(by = 'total', ascending = False)
 table.head(10)
 ```
 
-상위 10개 구간 Trip Count에 대한 지리 정보 시각화
+`start station latitude`, `start station longitude`, `end station latitude`, `end station longitude` 정보를 추가하여 상위 10개 구간 Trip Count에 대한 지리 정보 시각화
 
 ![Image-1](../images/2019-11-20-Citibike-Data-Analysis-4.png){: .center-image}
 

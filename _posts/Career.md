@@ -14,7 +14,7 @@ Jira, Confluence, Trac, Slack, Redash
 사업 기획자의 기본 역량으로 `영어(회화)`, 핵심 역량으로는 `재무/회계`, `비즈니스 모델링`, `데이터 분석` 등이 요구되는 것 같다. 아래 항목은 실무에서 주먹구구식으로 배우고 적용하던 사항을 다시 한 번 정리하고 개인 이력서/경력기술서에 다시 반영할 계획이다.
 
 1. 영어
-    - TOEIC Speaking Lv. 8
+    - TOEIC Speaking Lv. 7
     - To be fluent in English(Speaking/Writing)
 2. 데이터 분석
     - SQL
@@ -34,5 +34,6 @@ Jira, Confluence, Trac, Slack, Redash
     - 기술경영(?)
     - 빅데이터(?)
 5. 사이드 프로젝트 또는 기타 관심 사항
+    - ~~Citibike Data Analysis~~
     - React Native App 개발
     - 기초 통계학(노경섭)
