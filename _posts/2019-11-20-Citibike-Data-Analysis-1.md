@@ -195,6 +195,27 @@ FROM (
  ORDER BY count desc
  ```
 
+##### Quiz 1
+Are more bike trips were taken by subscribers or non-subscribers("Customers")? How does this compare to the **total trips started at each station?**
+
+Below is a prebiew of `trip` table.
+
+```sql
+SELECT
+  start_station,
+  subscription_type,
+  COUNT(start_date) AS trips,
+  (SELECT COUNT(start_date)
+    FROM trip AS t1
+    WHERE t.start_station =
+          t1.start_station) AS station_total
+FROM trip AS t
+GROUP BY start_station, subscription_type
+ORDER BY start_station
+LTMIT 3;
+```
+
+
 
 참고 자료
 - [A Tale of Twenty-Two Million Citi Bike Rides: Analyzing the NYC Bike Share System](https://toddwschneider.com/posts/a-tale-of-twenty-two-million-citi-bikes-analyzing-the-nyc-bike-share-system/)
