@@ -38,9 +38,9 @@ raw_data.sort_values(by = ['user_id', 'pickup_time']).head()
 
 ##### 다음 예약까지의 기간 구하기
 ```python
-raw_data['next_booking'] = raw_data['pickup_time_after'] - raw_data['pickup_time']
-raw_data['next_booking'] = raw_data['next_booking'].fillna(0)
-raw_data['next_booking'] = raw_data['next_booking'].dt.total_seconds().astype(float)
+raw_data['next_booking_period'] = raw_data['pickup_time_after'] - raw_data['pickup_time']
+raw_data['next_booking_period'] = raw_data['next_booking_point'].fillna(0)
+raw_data['next_booking_period'] = raw_data['next_bookingperiod'].dt.total_seconds().astype(float)
 ```
 
 ##### boxplot으로 시각화하기
