@@ -216,8 +216,7 @@ LTMIT 3;
 ```
 
 ##### Quiz 2
-Can you calculate a running total of minutes spent on bicycle `trips` per day?
-
+Can you calculate a running total of minutes spent on bicycle `trips` per day?  
 Below is a preview of `trips` table
 
 | duration | start_date | start_station |
@@ -241,6 +240,31 @@ LIMIT 5;
 |---------------|------------|----------|---------------|
 | South Van     | 2013-08-29 | 431      | 431           |
 | 5th at How    | 2013-08-29 | 298      | 729           |
+
+
+##### Quiz 3
+Can you create a simple window function to calculate the overall count of bicycle docks at a station without grouping the result?  
+Below is a preview of `station` table
+
+| name       | docks |
+|------------|-------|
+| San Jose D | 27    |
+| San Jose C | 15    |
+
+```sql
+SELECT
+  name,
+  docks,
+  COUNT(docks) OVER() AS total_docks
+FROM stations
+LIMIT 2;
+```
+
+| name       | docks | total_docks |
+|------------|-------|-------------|
+| San Jose D | 27    | 70          |
+| San Jose C | 15    | 70          |
+
 
 
 참고 자료
