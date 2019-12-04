@@ -198,7 +198,7 @@ FROM (
 ##### Quiz 1
 Are more bike trips were taken by subscribers or non-subscribers("Customers")? How does this compare to the **total trips started at each station?**
 
-Below is a prebiew of `trip` table.
+Below is a preview of `trip` table.
 
 ```sql
 SELECT
@@ -215,6 +215,32 @@ ORDER BY start_station
 LTMIT 3;
 ```
 
+##### Quiz 2
+Can you calculate a running total of minutes spent on bicycle `trips` per day?
+
+Below is a preview of `trips` table
+
+| duration | start_date | start_station |
+|----------|------------|---------------|
+| 298      | 8/29/13    | 5th at Ho     |
+| 431      | 9/29/13    | South Van     |
+
+```sql
+SELECT
+  start_station,
+  start_date,
+  duration,
+  SUM(duration) OVER (ORDER BY start_date
+          ROWSBETWEEN UNBOUNDED PRECEDING
+          AND CURRENT ROW) AS running_total
+FROM trips
+LIMIT 5;
+```
+
+| start_station | start_date | duration | running_total |
+|---------------|------------|----------|---------------|
+| South Van     | 2013-08-29 | 431      | 431           |
+| 5th at How    | 2013-08-29 | 298      | 729           |
 
 
 참고 자료
