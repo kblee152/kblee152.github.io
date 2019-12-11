@@ -10,7 +10,7 @@
       - SQL Recipe(~2020)
     - Python
       - ~~DS School: Kmong, Noom, DS School, Zigzag 실전 데이터 분석 4주 과정(완료)~~
-      - Python for Data Analysis
+      - Python for Data Analysis(~2020)
 3. 재무/회계 관련 자격 취득
     - ~~비즈니스 회계 입문: 스터디파이 4주 과정(완료)~~
     - `재경관리사` 취득을 통한 `재무`, `세무`, `원가관리`에 대한 재정리(3월)
