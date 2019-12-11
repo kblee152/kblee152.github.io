@@ -43,4 +43,4 @@ comments: true
 - 앞으로 전력 데이터, 페인먼트 시스템, 충전기 공유 등 다양한 비즈니스 모델이 개발될 것으로 예상된다.
 
 ##### EVSE Installation Validation
-![Image-2](../images/2019-12-14-1-daily-clipping-2.png){: .center-image
+![Image-2](../images/2019-12-14-1-daily-clipping-2.png){: .center-image}
