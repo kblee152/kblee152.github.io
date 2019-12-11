@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Daily Clipping-전기차 비즈니스"
+title: "News Clipping-전기차 및 충전인프라 비즈니스"
 tags: [Accounting]
 comments: true
 ---
