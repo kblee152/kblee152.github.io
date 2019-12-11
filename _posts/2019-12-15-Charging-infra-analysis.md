@@ -4,7 +4,7 @@ title: "충전인프라 데이터 분석"
 tags: [data-analysis]
 comments: true
 ---
-![Image-2](../images/2019-12-15-Charging-infra-analysis){: .center-image}
+![Image-2](../images/2019-12-15-Charging-infra-analysis.png){: .center-image}
 
 #### 지역별 충전인프라 구축 현황
 
