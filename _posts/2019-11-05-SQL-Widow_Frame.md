@@ -8,6 +8,7 @@ comments: true
 ##### 윈도 프레임 지정
 `ORDER BY`구문과 `SUM/AVG`등의 집약 함수를 조합하면, 집약 함수의 적용 범위를 유연하게 지정할 수 있음. 프레임 지정이란 현재 레코드 위치를 기반으로 상대적인 윈도를 정의하는 구문. 가장 기본적으로 `ROWS BETWEEN start ADN end`, start와 end에는 `CURRENT ROW`, `n PRECEDING`, `n FOLLOWING`, `UNBOINDED PRECEDING`, `UNBOUNDED FOLLOWING` 등의 키워드를 지정. 
 
+
 ```sql
 SELECT
     product_id,
@@ -43,6 +44,7 @@ FROM popular_products
 ORDER BY row
 ;
 ```
+
 
 | product_id | score | row | cum_score | local_avg | first_value | last_value |
 |------------|-------|-----|-----------|-----------|-------------|------------|
@@ -80,6 +82,6 @@ SELECT
     FROM popular_products
     WHERE category = 'action'
     ORDER BY row
-    ```
+```
 
 > 윈도 함수에 프레임 지정을 하지 않으면 ORDER BY 구문이 없는 경우 모든 행, ORDER BY 구문이 있는 경우 **첫 행에서 현재 행**까지가 디폴트 프레임으로 지정
